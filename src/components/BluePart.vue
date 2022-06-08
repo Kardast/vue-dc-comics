@@ -3,7 +3,7 @@
 
       <div class="container">
 
-          <p>blue part goes here</p>
+          <img v-for="(item, index) in shop" :key="index" src="item.img" alt="item.alt">
       </div>
   </div>
 </template>
@@ -11,6 +11,32 @@
 <script>
 export default {
   name: 'BluePart',
+  data(){
+    return{
+      shop: [
+        {
+          img: require("../assets/img/buy-comics-digital-comics.png"),
+          alt: "digital",
+        },
+        {
+          img: require("../assets/img/buy-comics-merchandise.png"),
+          alt: "merchandise",
+        },
+        {
+          img: require("../assets/img/buy-comics-shop-locator.png"),
+          alt: "locator",
+        },
+        {
+          img: require("../assets/img/buy-comics-subscriptions.png"),
+          alt: "subs",
+        },
+        {
+          img: require("../assets/img/buy-dc-power-visa.svg"),
+          alt: "visa",
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -26,6 +52,8 @@ export default {
         .container{
         width: 80%;
         height: 100%;
+        display: flex;
+
         // debug
         background-color: rgb(185, 80, 80);
       }
