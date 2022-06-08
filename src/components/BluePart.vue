@@ -3,7 +3,11 @@
 
       <div class="container">
 
-          <img v-for="(item, index) in shop" :key="index" src="item.img" alt="item.alt">
+          <div v-for="(item, index) in shop" :key="index"  class="small-container">
+
+              <img :src="item.img" :alt="item.alt">
+              <p>{{item.text}}</p>
+          </div>
       </div>
   </div>
 </template>
@@ -17,22 +21,27 @@ export default {
         {
           img: require("../assets/img/buy-comics-digital-comics.png"),
           alt: "digital",
+          text: "DIGITAL COMICS"
         },
         {
           img: require("../assets/img/buy-comics-merchandise.png"),
           alt: "merchandise",
+          text: "DC MERCHANDISE"
         },
         {
-          img: require("../assets/img/buy-comics-shop-locator.png"),
-          alt: "locator",
-        },
-        {
-          img: require("../assets/img/buy-comics-subscriptions.png"),
+            img: require("../assets/img/buy-comics-subscriptions.png"),
           alt: "subs",
+          text: "SUBSCRIPTION"
+        },
+        {
+            img: require("../assets/img/buy-comics-shop-locator.png"),
+            alt: "locator",
+            text: "COMICS SHOP LOCATOR"
         },
         {
           img: require("../assets/img/buy-dc-power-visa.svg"),
           alt: "visa",
+          text: "DC POWER VISA"
         }
       ]
     }
@@ -50,12 +59,24 @@ export default {
     // debug
     height: 140px;
         .container{
-        width: 80%;
-        height: 100%;
-        display: flex;
+            width: 80%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
 
-        // debug
-        background-color: rgb(185, 80, 80);
+            .small-container{
+                display: flex;
+                align-items: center;
+                color: white;
+                font-size: 14px;
+                img{
+                    width: 40px;
+                    height: 55px;
+                    margin-right: 5px;
+                }
+            }
+
       }
   }
 </style>

@@ -21,13 +21,12 @@ export default {
     display: flex;
     justify-content: center;
     height: 300px;
-    // debug
-    background-color: #506f8d;
+    background-image: url("../assets/img/footer-bg.jpg");
         .container{
         width: 80%;
         height: 100%;
         // debug
-        background-color: rgb(187, 128, 128);
+        // background-color: rgb(187, 128, 128);
       }
   }
 </style>
