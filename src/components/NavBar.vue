@@ -1,6 +1,10 @@
 <template>
   <div class="navbar">
-   
+
+    <div class="container">
+
+      ciao
+    </div>
   </div>
 </template>
 
@@ -12,18 +16,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .navbar{
+    width: 100wh;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    // debug
+    background-color: yellow;
+      .container{
+        width: 80%;
+        height: 100%;
+        // debug
+        background-color: red;
+      }
+  }
 </style>
