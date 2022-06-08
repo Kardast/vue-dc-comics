@@ -14,38 +14,38 @@
 
 <script>
 export default {
-  name: 'BluePart',
-  data(){
-    return{
-      shop: [
-        {
-          img: require("../assets/img/buy-comics-digital-comics.png"),
-          alt: "digital",
-          text: "DIGITAL COMICS"
-        },
-        {
-          img: require("../assets/img/buy-comics-merchandise.png"),
-          alt: "merchandise",
-          text: "DC MERCHANDISE"
-        },
-        {
-            img: require("../assets/img/buy-comics-subscriptions.png"),
-          alt: "subs",
-          text: "SUBSCRIPTION"
-        },
-        {
-            img: require("../assets/img/buy-comics-shop-locator.png"),
-            alt: "locator",
-            text: "COMICS SHOP LOCATOR"
-        },
-        {
-          img: require("../assets/img/buy-dc-power-visa.svg"),
-          alt: "visa",
-          text: "DC POWER VISA"
+    name: 'BluePart',
+    data(){
+        return{
+            shop: [
+                {
+                img: require("../assets/img/buy-comics-digital-comics.png"),
+                alt: "digital",
+                text: "DIGITAL COMICS"
+                },
+                {
+                img: require("../assets/img/buy-comics-merchandise.png"),
+                alt: "merchandise",
+                text: "DC MERCHANDISE"
+                },
+                {
+                    img: require("../assets/img/buy-comics-subscriptions.png"),
+                alt: "subs",
+                text: "SUBSCRIPTION"
+                },
+                {
+                    img: require("../assets/img/buy-comics-shop-locator.png"),
+                    alt: "locator",
+                    text: "COMICS SHOP LOCATOR"
+                },
+                {
+                img: require("../assets/img/buy-dc-power-visa.svg"),
+                alt: "visa",
+                text: "DC POWER VISA"
+                }
+            ]
         }
-      ]
     }
-  }
 }
 </script>
 
@@ -70,11 +70,11 @@ export default {
                 align-items: center;
                 color: white;
                 font-size: 14px;
-                img{
-                    width: 40px;
-                    height: 55px;
-                    margin-right: 5px;
-                }
+                    img{
+                        width: 40px;
+                        height: 55px;
+                        margin-right: 5px;
+                    }
             }
 
       }

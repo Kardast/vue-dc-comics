@@ -104,7 +104,6 @@ export default {
       }
 
       .navlist{
-        padding: 0 30px;
         width: 60%;
         list-style: none;
         display: flex;
