@@ -3,14 +3,20 @@
 
     <div class="container">
 
-      <h2>CURRENT SERIES</h2>
+      <div class="series">
+
+        <h2>CURRENT SERIES</h2>
+      </div>
 
       <div class="comics-container">
 
         <!-- qui ci va il tag che ti crei nel componente -->
-        <ComicsCard v-for="(cardiesimo, index) in cards" :key="index"
-          :details="cardiesimo"
-        />
+        <ComicsCard v-for="(cardiesimo, index) in cards" :key="index" :details="cardiesimo" />
+      </div>
+
+      <div class="load-b">
+
+        <a href="#">LOAD MORE</a>
       </div>
     </div>
   </div>
@@ -120,11 +126,37 @@ export default {
     height: 100%;
     color: white;
 
-    .comics-container{
+    .series{
+      height: 50px;
+      position: relative;
+
+      h2 {
+        background-color: #0282f9;
+        padding: 10px 40px;
+        display: inline-block;
+        position: absolute;
+        top: -25px;
+      }
+    }
+
+    .comics-container {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      // margin: 0 auto;
+
+    }
+
+    .load-b {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        background-color: #0282f9;
+        padding: 10px 40px;
+      }
     }
   }
 }
