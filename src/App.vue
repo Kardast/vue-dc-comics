@@ -5,6 +5,7 @@
     </header>
 
     <main>
+      <JumboPart/>
       <ContentPart/>
       <BluePart/>
     </main>
@@ -22,6 +23,7 @@ import ContentPart from './components/ContentPart.vue'
 import BluePart from './components/BluePart.vue'
 import FooterPart from './components/FooterPart.vue'
 import FooterLowPart from './components/FooterLowPart.vue'
+import JumboPart from './components/JumboPart.vue'
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
     ContentPart,
     BluePart,
     FooterPart,
-    FooterLowPart
+    FooterLowPart,
+    JumboPart
 }
 }
 </script>

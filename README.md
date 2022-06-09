@@ -56,3 +56,12 @@ dovrete aggiungere il require:
 img: require("../assets/img/buy-dc-power-visa.svg")
 
 in pratica se non vi appaiono le immagini provate col require
+
+MILESTONE 2
+
+Descrizione:
+Continuate a lavorare nella stessa repo di ieri e create un nuovo componente per visualizzare le card dei fumetti,
+
+prendendo i dati dal file json che trovate in allegato.
+
+Una volta inseriti tutti i contenuti dinamicamente, completate il vostro layout e rifinite i dettagli con Sass.
