@@ -205,7 +205,7 @@ export default {
             }
 
             .f-pic{
-                width: 50%;
+                width: 35%;
                 display: flex;
                 justify-content: center;
 

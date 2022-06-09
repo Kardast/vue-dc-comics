@@ -35,11 +35,14 @@ Definite i componenti necessari per strutturare il layout come da screenshot all
 <!-- OK -->
 
 Quando la struttura a macroblocchi è pronta, popolate le voci di menu dinamicamente usando i data del componente.
+<!-- OK -->
 
 Per oggi diamo priorità alla struttura: quando è tutto bello solido, passiamo al Sass! (cioè ai dettagli del layout)
+<!-- OK -->
 
 Bonus:
 Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
+<!-- OK -->
 + altri di cui abbiam parlato.
 
 Se volete caricare le immagini salvate in assets in maniera dinamica dai data() di Vue, dovrete utilizzare il require()
