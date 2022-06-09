@@ -180,7 +180,7 @@ export default {
         align-items: center;
 
         .f-links {
-            width: 50%;
+            width: 60%;
             display: flex;
             color: white;
 
@@ -205,12 +205,15 @@ export default {
         }
 
         .f-pic {
-            width: 35%;
+            width: 40%;
+            height: 100%;
             display: flex;
             justify-content: center;
+            align-items: center;
+            overflow: hidden;
 
             img {
-                width: 80%;
+                width: 90%;
             }
         }
 

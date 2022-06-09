@@ -15,8 +15,6 @@ export default {
 <style scoped lang="scss">
 .jumbotron {
     width: 100wh;
-    // display: flex;
-    // justify-content: center;
     height: 400px;
     background-image: url("../assets/img/jumbotron.jpg");
     background-repeat: no-repeat;
